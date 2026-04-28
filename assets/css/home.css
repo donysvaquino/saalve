@@ -1,0 +1,109 @@
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        background: var(--gradiente);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: 22.3rem;
+        text-align: center;
+        margin-top: -15vh;
+    }
+
+    & .superior {
+        width: 75%;
+        display: flex;
+        height: 14vh;
+        justify-content: space-between;
+
+        & .textos {
+            width: 25%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: var(--branco);
+            height: 14vh;
+
+            & .viva {
+                width: 100%;
+                font-size: 37px;
+                font-weight: bold;
+            }
+
+            & .escolha {
+                background: var(--gradiente);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+            }
+
+            & .escolha, .salve {
+                font-size: 37px;
+                font-weight: bold;
+            }
+        }
+
+        & .img1 {
+            background-image: url(../img/img1.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            width: 30%;
+            height: 200%;
+        }
+        
+        & .img2 {
+            background-image: url(../img/img2.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            width: 30%;
+            height: 170%;
+            z-index: 1;
+        }
+    }
+
+    & .inferior {
+        margin-top: -5vh;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        & p {
+            width: 30%;
+            font-weight: lighter;
+            color: var(--branco);
+        }
+
+        & button {
+            width: 200px;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background: transparent;
+            border-radius: 20px;
+            color: var(--branco);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 3px var(--amarelo);
+            transition: background   0.2s ease-in-out;
+        }
+
+        & button:hover {
+            background: var(--gradiente);
+            color: var(--fundo);
+        }
+    }
+}
+
+nav ul li:nth-child(1) a {
+    font-weight: 600;
+}

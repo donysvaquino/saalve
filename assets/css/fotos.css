@@ -1,0 +1,96 @@
+h1 {
+    color: var(--branco);
+    width: 100%;
+
+    & span {
+        background: var(--gradiente);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;    
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 3vw 0px 3vw;
+}
+
+.containerImagens {
+    width: 100%;
+    height: 90%;
+    margin-top: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .imagemGrande {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 0px 0px 2vw 2vw;
+        gap: 2px;
+        color: var(--branco);
+        background-image: url(../img/estadio.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+
+        & p {
+            font-weight: 300;
+        }
+    }
+    
+    & .imagemGrande:hover {
+        scale: 1.01;
+    }
+
+    & .imagemPequena {
+        width: 49%;
+        color: var(--branco);
+        height: 27%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+
+        & h1 {
+            text-align: center;
+        }
+
+        & p {
+            font-weight: 300;
+        }
+    }
+
+    & .imagemPequena:hover {
+        scale: 1.01;
+    }
+
+    & .imagemPequena.primeira {
+        background-image: url(../img/show.jpg);
+        background-size: cover;
+        background-position: center;        
+    }
+
+    & .imagemPequena.segunda {
+        background-image: url(../img/opera.jpg);
+        background-size: cover;
+        background-position: bottom;        
+    }
+}
+
+nav ul li:nth-child(2) a {
+    font-weight: 600;
+}
