@@ -2,7 +2,6 @@
     session_start();
     $msg_erro = $_SESSION['erro'] ?? null;
 
-    // Limpa as mensagens após capturar
     unset($_SESSION['sucesso'], $_SESSION['erro']);
 ?>
 

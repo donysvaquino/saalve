@@ -17,6 +17,6 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="fotos.php">Fotos</a></li>
             <li><a href="perfil.php">Perfil</a></li>
-            <li><a href="sair.php">Sair</a></li>
+            <li><a href="#" onclick="toggleLogout()">Sair</a></li>
         </ul>
     </nav>

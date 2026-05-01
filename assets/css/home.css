@@ -83,11 +83,13 @@ main {
             color: var(--branco);
         }
 
-        & button {
+        & a {
             width: 200px;
             padding: 20px;
             font-size: 18px;
             font-weight: bold;
+            text-align: center;
+            text-decoration: none;
             background: transparent;
             border-radius: 20px;
             color: var(--branco);
@@ -97,7 +99,7 @@ main {
             transition: background   0.2s ease-in-out;
         }
 
-        & button:hover {
+        & a:hover {
             background: var(--gradiente);
             color: var(--fundo);
         }

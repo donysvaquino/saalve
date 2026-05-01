@@ -36,7 +36,9 @@
 
         & img {
             width: 100%;
+            height: 100%;
             border-radius: 100%;
+            object-fit: cover;
             border: solid 3px var(--amarelo);
         }
     }
@@ -89,6 +91,14 @@
                     color: var(--branco);
                 }
 
+                & input[readonly] {
+                    cursor: default;
+                }
+
+                & input:not([readonly]) {
+                    background-color: #4e5563;
+                }
+
                 & i {
                     color: #ffffff67;
                     font-size: 12px;
@@ -102,8 +112,8 @@
             justify-content: space-between;
 
             & button {
-                background: var(--gradiente);
                 width: 48%;
+                background: var(--gradiente);
                 height: 7vh;
                 padding: 0px 20px 0 20px;
                 font-size: 17px;
@@ -111,6 +121,14 @@
                 border-radius: 15px;
                 cursor: pointer;
                 border: none;
+            }
+
+            & .btn-salvar:disabled {
+                display: none;
+            }
+
+            & .btn-salvar:not(:disabled) {
+                display: block;
             }
 
             & button.cancel {
@@ -137,6 +155,11 @@
     border-radius: 15px;
     font-weight: 500;
     color: var(--branco);
+}
+
+.mensagem.erro {
+    background-color: #973636;
+    border-left: 4px #ff7e7e solid;    
 }
 
 nav ul li:nth-child(3) a {

@@ -8,8 +8,7 @@
 
         header("Location: login.php");
         exit;
-    }
-
+    };
 ?>
 
     <main>
@@ -26,7 +25,7 @@
         <h1>saalve</h1>
         <div class="inferior">
             <p>Bem-vindo ao saalve. A câmera que capta todos os seus momentos para que você possa vivê-los com intensidade sem perder os closes.</p>
-            <button>explorar</button>
+            <a href="fotos.php">explorar</a>
         </div>
     </main>
     
